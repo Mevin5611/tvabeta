@@ -12,6 +12,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        engagement:'engagement',
+        centaur:'centaur',
+        cormorant:'cormorant',
+        wrong:'wrong',
+        boxn:'boxn',
+        boxm:'boxm',
+        }
     },
   },
   plugins: [],

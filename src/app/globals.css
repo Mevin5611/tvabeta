@@ -1,27 +1,135 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'engagement';
+  src: url('./fonts/engagement.regular.ttf') format('truetype');
+  font-weight: 900;
+  }
+@font-face {
+  font-family: 'centaur';
+  src: url('./fonts/CentaurMTStd.ttf') format('truetype');
+  
+  }
+@font-face {
+  font-family: 'cormorant';
+  src: url('./fonts/CormorantSC-Bold.ttf') format('truetype');
+  
+  }
+@font-face {
+  font-family: 'wrong';
+  src: url('./fonts/Wrong\ Delivery.ttf') format('truetype');
+  
+  }
+@font-face {
+  font-family: 'boxn';
+  src: url('./fonts/A\ Box\ For.ttf') format('truetype');
+  
+  }
+@font-face {
+  font-family: 'boxm';
+  src: url('./fonts/A\ Box\ For\ 3.ttf') format('truetype');
+  
+  }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.bg-hero{
+  background-image: url(../../public/images/We-Will-Rise-Again-4.png);
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center; 
+  
+}
+.bg-about{
+  background-image: url(../../public/images/Group\ 14.jpg);
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center; 
+  
+  
+}
+.bg-map{
+  background-image: url(../../public/images/GTAV_SATELLITE_2048x2048\ 2.png);
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center; 
+  
+  
+}
+.bg-car{
+  background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(23,39,248,1) 68%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* From Uiverse.io by dylanharriscameron */ 
+.card {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  ;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 90px;
+  z-index: 2;
+  
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #dadbde62;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-footer{
+  background: rgb(218,219,222);
+  background: linear-gradient(0deg, rgb(218, 219, 222) 0%, rgb(255, 255, 255) 100%);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bg-social{
+  
 }
